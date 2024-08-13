@@ -1,0 +1,223 @@
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: royalblue;
+}
+.container {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+}
+.coffee {
+  width: 400px;
+  height: 400px;
+  background-color: white;
+  clip-path: polygon(28% 00%, 70% 0%, 100% 100%, 0% 100%);
+  transform: rotate(180deg);
+}
+
+.tea {
+  width: 400px;
+  height: 50px;
+  background-color: chocolate;
+  border: 15px solid lightgray;
+  border-radius: 100%;
+  position: absolute;
+  top: -35px;
+  left: -18px;
+}
+.tea:after {
+  content: "";
+  width: 170px;
+  height: 50px;
+  background-color: white;
+  border-radius: 100%;
+  position: absolute;
+  top: 390px;
+  right: 108px;
+}
+
+.logo {
+  width: 160px;
+  height: 160px;
+  border: 12px solid rgba(0, 0, 255, 0.591);
+  border-radius: 50%;
+  position: absolute;
+  top: 110px;
+  left: 110px;
+  transform: rotate(62deg);
+}
+
+.design1 {
+  width: 120px;
+  height: 17px;
+  background-color: red;
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  clip-path: polygon(10% 00%, 90% 0%, 100% 100%, 0% 100%);
+}
+
+.design2 {
+  content: "";
+  width: 90px;
+  height: 17px;
+  background-color: red;
+  position: absolute;
+  top: 78px;
+  left: 35px;
+  clip-path: polygon(10% 00%, 90% 0%, 100% 100%, 0% 100%);
+  /* transform: rotate(180deg); */
+}
+.design2:after {
+  content: "";
+  width: 4%;
+  height: 17px;
+  background-color: white;
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  transform: skewX(155deg);
+}
+.design3 {
+  width: 25px;
+  height: 20px;
+  border: 13px solid red;
+  border-radius: 50%;
+  position: absolute;
+  top: 27px;
+  left: 60px;
+}
+
+.design3:after {
+  content: "";
+  width: 22px;
+  height: 18px;
+  border: 15px solid white;
+  background-color: white;
+  border-top: transparent;
+  position: absolute;
+  top: -20px;
+  left: 5px;
+  transform: rotate(52deg);
+}
+.design4 {
+  position: absolute;
+  bottom: 55px;
+  left: 135px;
+  font-size: 18px;
+}
+.design4 h3 {
+  color: rgba(0, 0, 255, 0.591);
+}
+.design4 b {
+  color: red;
+}
+/* 
+@media (max-width: 480px) {
+  .coffee {
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    clip-path: polygon(28% 00%, 70% 0%, 100% 100%, 0% 100%);
+    transform: rotate(180deg);
+  }
+
+  .tea {
+    width: 280px;
+    height: 25px;
+    background-color: brown;
+    border: 15px solid lightgray;
+    top: -30px;
+    left: -5px;
+  }
+  .tea:after {
+    content: "";
+    width: 133px;
+    height: 50px;
+    top: 285px;
+    right: 70px;
+  }
+
+  .logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    transform: rotate(70deg);
+  }
+
+  .design1 {
+    width: 80px;
+    height: 14px;
+    background-color: red;
+    position: absolute;
+    top: 80px;
+    left: 20px;
+    clip-path: polygon(10% 00%, 90% 0%, 100% 100%, 0% 100%);
+  }
+
+  .design2 {
+    content: "";
+    width: 60px;
+    height: 14px;
+    background-color: red;
+    position: absolute;
+    top: 62px;
+    left: 30px;
+    clip-path: polygon(10% 00%, 90% 0%, 100% 100%, 0% 100%);
+    transform: rotate(180deg);
+  }
+  .design2:after {
+    content: "";
+    width: 4%;
+    height: 17px;
+    background-color: white;
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    transform: skewX(155deg);
+  }
+  .design3 {
+    width: 15px;
+    height: 12px;
+    border: 9px solid red;
+    border-radius: 50%;
+    position: absolute;
+    top: 35 px;
+    left: 45px;
+  }
+
+  .design3:after {
+    content: "";
+    width: 20px;
+    height: 18px;
+    border: 15px solid white;
+    background-color: white;
+    border-top: transparent;
+    position: absolute;
+    top: -20px;
+    left: 5px;
+    transform: rotate(52deg);
+  }
+  .design4 {
+    position: absolute;
+    bottom: 55px;
+    left: 135px;
+    font-size: 18px;
+  }
+  .design4 h3 {
+    color: rgba(0, 0, 255, 0.591);
+  }
+  .design4 b {
+    color: red;
+  }
+} */
